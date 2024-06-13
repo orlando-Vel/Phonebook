@@ -18,16 +18,18 @@ const App = () => {
   return (
     <div>
       <h1>Phonebook</h1>
-      <ContactForm
-        fetchContacts={getContacts}
-        currentContact={currentContact}
-        setCurrentContact={setCurrentContact}
-      />
-      <ContactList
-        contacts={contacts}
-        fetchContacts={getContacts}
-        setCurrentContact={setCurrentContact}
-      />
+      <div className="container">
+        <ContactForm
+          fetchContacts={getContacts}
+          currentContact={currentContact}
+          setCurrentContact={setCurrentContact}
+        />
+        <ContactList
+          contacts={contacts}
+          fetchContacts={getContacts}
+          setCurrentContact={setCurrentContact}
+        />
+      </div>
     </div>
   );
 };
